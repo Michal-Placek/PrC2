@@ -1,3 +1,14 @@
 {block content}
-
-Karel je vájo
+{if $user->isLoggedIn()}
+<h1>jsi prihlasen</h1>
+{else}
+<h1>Vítejte na stránce Math Way!</h1>
+<br>
+<p>Na této webové stránce najdete řadu matematických příkladů, které jsou rozděleny do různých kategorií podle obtížnosti a tématu. <br>
+Například můžete najít příklady z oblasti algebra, geometrie, trigonometrie a mnoha dalších. Každý příklad je doprovázen vysvětlením <br>
+a řešením, takže si můžete ověřit své znalosti nebo se poučit o správném postupu. Kromě toho jsou na stránce dostupné i nástroje pro výpočty, <br>
+které vám pomohou řešit příklady rychleji a snáze. <br>
+Stránka je navržena tak, aby byla přístupná pro široké publikum, od začátečníků po pokročilé uživatele, a je vhodná pro vzdělávání i pro samostudium. <br>
+<br>
+<h4>Pro přesměrování na výběr příkladů se prosím přihlašte</h4></p>
+{/if}
