@@ -33,8 +33,7 @@ final class GamePresenter extends Nette\Application\UI\Presenter{
 
         switch($difficulty){
             case "easy":
-                $problems = $this->problemFacade->getByDifficulty($difficulty);
-                
+                $this->problemFacade->getByDifficulty($difficulty);
                 $this->template->problem = "aaa";
                 break;
             case "medium":
